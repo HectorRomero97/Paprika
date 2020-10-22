@@ -1,0 +1,66 @@
+<!-- Default form register -->
+
+<div class="container-fluid special-color altura">
+  <div class="container special-color">
+
+    <div class="row">
+
+      <div class="col-sm-3"></div>
+      <form class="text-center border border-light p-5 col-md-6 white my-5">
+
+        <p class="h4 mb-4">Registro</p>
+
+        <div class="form-row mb-4">
+          <div class="col">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Nombres"
+              name="first">
+          </div>
+          <div class="col">
+            <!-- Last name -->
+            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Apellidos"
+              name="second">
+          </div>
+        </div>
+
+        <!-- E-mail -->
+        <input name="email" type="email" id="defaultRegisterFormEmail" class="form-control mb-4"
+          placeholder="E-mail/Correo">
+
+        <!-- Password -->
+        <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password"
+          aria-describedby="defaultRegisterFormPasswordHelpBlock" name="pass" [(ngModel)]="model.password">
+        <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+          Por lo menos 8 letras y un numero
+        </small>
+
+        <!-- Phone number -->
+        <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Numero Telefonico"
+          aria-describedby="defaultRegisterFormPhoneHelpBlock" [(ngModel)]="model.phone" name="phone">
+        <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+          Requerido en caso de problemas con los pedidos
+        </small>
+
+        <!-- direccion -->
+        <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="direccion"
+          aria-describedby="defaultRegisterFormPhoneHelpBlock" name="address">
+
+        <!-- Sign up button -->
+        <a routerLink="/"> <button mdbBtn color="red" block="true" class="my-4" type="submit">Sign in</button></a>
+
+        <!-- Social register -->
+        <hr>
+
+        <!-- Terms of service -->
+        <p>Al Presionar
+          <em>Registrar</em> usted acepta nuestros
+          <a routerLink="/home">Terminos de Servicio</a></p>
+
+      </form>
+
+      <div class="col-sm-3"></div>
+
+    </div>
+
+  </div>
+</div>

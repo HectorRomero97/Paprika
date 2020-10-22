@@ -1,0 +1,41 @@
+<!-- Default form login -->
+<div class="container-fluid special-color altura">
+  <div class="container special-color">
+
+    <div class="row">
+
+      <div class="col-sm"></div>
+      <form class="text-center border border-light p-5 col-sm my-5 white">
+
+        <p class="h4 mb-4">Inicio de Sesion</p>
+
+        <!-- Email -->
+        <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+        <!-- Password -->
+        <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+
+        <div class="d-flex justify-content-around">
+          <div>
+            <!-- Remember me -->
+            <mdb-checkbox [default]="true">Recordar</mdb-checkbox>
+          </div>
+          <div>
+            <!-- Forgot password -->
+            <a href="">Olvido su contraseña?</a>
+          </div>
+        </div>
+
+        <!-- Sign in button -->
+        <button type="button" mdbBtn color="danger" mdbWavesEffect>Iniciar Sesion</button>
+        <!-- Register -->
+        <p>No es miembro?
+          <a routerLink="/registro">Registrece!</a>
+        </p>
+      </form>
+      <!-- Default form login -->
+      <div class="col-sm"></div>
+    </div>
+
+  </div>
+</div>

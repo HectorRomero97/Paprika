@@ -1,0 +1,55 @@
+<!-- Default form contact -->
+
+
+<div class="container-fluid special-color">
+  <div class="container special-color">
+
+    <div class="row">
+
+      <div class="col-sm-3"></div>
+      <form class="text-center border border-light p-5 white col-md-6 my-5">
+
+        <p class="h4 mb-4">Contactenos!</p>
+
+        <!-- Name -->
+        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Nombre Completo">
+
+        <!-- Email -->
+        <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+        <!-- Subject -->
+        <label>Tema</label>
+        <select class="browser-default custom-select mb-4">
+          <option value="" disabled>Choose option</option>
+          <option value="1" selected>Retroalimentacion</option>
+          <option value="2">Reportar un Bug</option>
+          <option value="3">Pedir Nuevas Caracteristicas en la Pagina</option>
+          <option value="4">Pedir Nuevas Opciones de Comida</option>
+        </select>
+
+        <!-- Message -->
+        <div class="form-group">
+          <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
+            placeholder="Message"></textarea>
+        </div>
+
+        <!-- Copy -->
+        <div class="row">
+          <div class="col-md-6 mx-auto d-flex justify-content-center">
+            <mdb-checkbox [default]="true" class="mb-4">Enviarme una copia del Mensaje</mdb-checkbox>
+          </div>
+        </div>
+
+
+        <!-- Send button -->
+        <button mdbBtn color="red" block="true" type="submit">Send</button>
+
+      </form>
+      <!-- Default form contact -->
+
+      <div class="col-sm-3"></div>
+
+    </div>
+
+  </div>
+</div>

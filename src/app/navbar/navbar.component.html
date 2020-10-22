@@ -1,0 +1,63 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark red" [containerInside]="false">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" routerLink="/">Paprika</a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="/"> <i class="fas fa-home"></i> Inicio<span
+            class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="/orden"> <i class="fas fa-motorcycle"></i>
+          Pedidos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="/contacto"> <i class="fas fa-phone"></i> Contacto
+        </a>
+      </li>
+    </ul>
+    <!-- Links -->
+
+    <ul *ngIf="userName" class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link">
+          <div class="btn-group" mdbDropdown>
+            <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon> {{ userName }}
+            <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="divider dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <ul *ngIf="!userName" class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/login"><button type="button" mdbBtn color="danger"
+            mdbWavesEffect>Login</button></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/registro"><button type="button" mdbBtn color="danger"
+            mdbWavesEffect>Registro</button></a>
+      </li>
+    </ul>
+
+
+
+
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
